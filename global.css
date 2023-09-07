@@ -1,0 +1,916 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Styles for the preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/favicon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5%;
+  z-index: 9999;
+  overflow: hidden;
+}
+@media screen and (max-width: 425px) {
+  #preloader {
+    background-size: 20%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #preloader {
+    background-size: 12%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #preloader {
+    background-size: 10%;
+  }
+}
+#preloader::after {
+  content: "Loading...";
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  letter-spacing: 2px;
+  top: 7%;
+  position: absolute;
+}
+@media screen and (max-width: 767px) {
+  #preloader::after {
+    font-size: 16px;
+    top: 5%;
+  }
+}
+@media screen and (max-width: 991px) {
+  #preloader::after {
+    top: 7%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+  #preloader::after {
+    top: 11%;
+  }
+}
+
+/* Styles for the content */
+#content {
+  display: none;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.bg-green {
+  background-color: #0b6623;
+}
+
+.bg-geen-gradient {
+  background: linear-gradient(180deg, rgb(11, 102, 35) 15%, rgb(3, 52, 16) 99%);
+}
+
+.ligh_bg_green {
+  background-color: #0b6623;
+}
+
+::-moz-placeholder {
+  color: #d2d2d2 !important;
+  font-size: 18px;
+}
+
+::placeholder {
+  color: #d2d2d2 !important;
+  font-size: 18px;
+}
+
+.navbar-expand-md .navbar-nav {
+  flex-direction: row !important;
+}
+
+.customToogler {
+  display: flex;
+  flex-wrap: nowrap !important;
+}
+@media screen and (min-width: 2048px) and (max-width: 2560px) {
+  .customToogler a img {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .customToogler a img {
+    width: 180%;
+  }
+}
+
+@media screen and (min-width: 2048px) and (max-width: 2560px) {
+  .nav-item a img {
+    width: 38px !important;
+    height: 38px !important;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .nav-item a img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+
+.navbar-collapse {
+  width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-toggler {
+    padding: 5px 5px;
+    border: none;
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  padding: 20px 33px;
+}
+@media screen and (max-width: 466px) {
+  .navbar {
+    padding: 20px 0px;
+  }
+}
+
+.navbar-brand img {
+  width: 250px;
+}
+@media screen and (max-width: 768px) {
+  .navbar-brand img {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .navbar-brand img {
+    width: 200px;
+  }
+}
+
+.nav-item {
+  margin: 5px 12px;
+  color: #ffffff;
+}
+.nav-item a {
+  font-size: 18px;
+  color: E3E3E3;
+}
+.nav-item a:hover {
+  color: #fff;
+}
+.nav-item a:focus {
+  color: #fff;
+}
+.nav-item a img {
+  width: 100%;
+  height: auto;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.customToogler .navbar-toggler:focus {
+  box-shadow: none;
+}
+@media screen and (max-width: 374px) {
+  .customToogler .navbar-toggler {
+    float: right;
+  }
+}
+
+.homeTitleSection img {
+  margin: 60px 0px -35px;
+}
+@media screen and (max-width: 1440px) {
+  .homeTitleSection img {
+    margin: 10px 0px 45px;
+    width: 55px;
+  }
+}
+
+.homBgSection {
+  background-image: url(images/ydt_home_bg.webp);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 720px;
+}
+@media screen and (max-width: 425px) {
+  .homBgSection {
+    background-image: url(images/ydt_home_mobile_img.webp);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: 100%;
+  }
+}
+
+.yodaDTsection-1 {
+  padding: 60px 0px 0px 0px;
+}
+.yodaDTsection-1 h1 {
+  font-size: 80px;
+  padding-top: 100px;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .yodaDTsection-1 h1 {
+    font-size: 51px !important;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+.yodaDTsection-2 {
+  margin-bottom: 70px;
+}
+
+.input-group {
+  box-shadow: 6px 11px 12px rgba(0, 0, 0, 0.25), inset 2px 3px 3px rgba(208, 245, 218, 0.7);
+  border-radius: 56px;
+}
+.input-group::before {
+  content: "Get Notified";
+  position: absolute;
+  top: -32px;
+  left: 0;
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
+  .input-group::before {
+    display: none;
+  }
+}
+.input-group .input-group-text {
+  border-radius: 60px 0px 0px 60px;
+  border: none;
+  height: 63px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 46px 100px;
+  background: linear-gradient(90.6deg, #7ac93b 25.97%, #0b6623 161.43%);
+  box-shadow: 6px 11px 12px rgba(0, 0, 0, 0.25), inset 2px 3px 3px rgba(208, 245, 218, 0.7);
+}
+@media screen and (max-width: 768px) {
+  .input-group .input-group-text {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .input-group .input-group-text {
+    padding: 46px 60px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .input-group .input-group-text {
+    height: 110px;
+    color: #fff;
+    font-size: 32px;
+  }
+}
+.input-group .form-control {
+  height: 60px;
+  padding: 45px 96px 45px 45px;
+  border-radius: 0px 50px 50px 0px !important;
+}
+@media screen and (min-width: 2560px) {
+  .input-group .form-control {
+    padding: 53px 96px 55px 45px;
+  }
+}
+.input-group .form-control:focus {
+  box-shadow: none;
+  border-color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .input-group .form-control {
+    padding: 22px 93px 25px 45px;
+    border-radius: 50px 50px !important;
+  }
+}
+.input-group button {
+  padding: 34px 38px;
+  background: #e14933;
+  position: absolute;
+  right: -2px;
+  top: 0;
+  border: none;
+  border-radius: 65.5px !important;
+  z-index: 999;
+}
+@media screen and (max-width: 768px) {
+  .input-group button {
+    padding: 18px 15px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .input-group button {
+    padding: 43px 41px;
+    right: -5px;
+    ding: 53px 96px 55px 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .yodaDTsection-3 {
+    padding: 5px 25px;
+  }
+}
+
+.itemCard {
+  padding: 15px;
+  text-align: center;
+}
+@media screen and (max-width: 408px) {
+  .itemCard {
+    padding: 5px;
+  }
+}
+.itemCard h5 {
+  font-size: 18px;
+  color: #e3e3e3;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 10px;
+}
+@media screen and (min-width: 2560px) {
+  .itemCard h5 {
+    font-size: 24px;
+    margin: 30px;
+  }
+}
+
+.yodaDTsection-4 {
+  background-image: url(images/ydt_footer_bg.svg);
+  background-repeat: repeat-x;
+  height: 243px;
+  mix-blend-mode: multiply;
+  opacity: 1;
+  background-size: contain;
+}
+@media screen and (max-width: 1024px) {
+  .yodaDTsection-4 {
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 425px) {
+  .yodaDTsection-4 {
+    background-size: contain;
+    background-image: url(/images/Vector.svg);
+    height: 100px;
+  }
+}
+
+#hidden-text {
+  display: none;
+}
+
+#section1 {
+  scroll-margin-top: 200px;
+}
+
+.footer img {
+  margin-top: 10px;
+  mix-blend-mode: multiply;
+  overflow: hidden;
+  width: 100%;
+}
+@media screen and (max-width: 425px) {
+  .footer img {
+    margin-top: 100px;
+  }
+}
+
+input[type=submit] {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 111;
+}
+
+.input-group {
+  max-width: 1117px;
+  margin: auto;
+}
+@media screen and (min-width: 2560px) {
+  .input-group {
+    max-width: 1598px;
+  }
+}
+
+.itemsCards {
+  max-width: 1171px;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 2px;
+}
+@media screen and (max-width: 1024px) {
+  .itemsCards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 550px) {
+  .itemsCards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .itemsCards {
+    max-width: 1625px;
+  }
+}
+.itemsCards img {
+  width: 140px;
+  height: auto;
+}
+@media screen and (max-width: 750px) {
+  .itemsCards img {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .itemsCards img {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .itemsCards img {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  input::-moz-placeholder {
+    font-size: 14px;
+  }
+  .input,
+  input::placeholder {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  input::-moz-placeholder {
+    font-size: 25px;
+  }
+  .input,
+  input::placeholder {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .d-nonequery {
+    max-width: 2000px !important;
+  }
+}
+
+.about {
+  position: fixed;
+  z-index: 10;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: all 0.2s ease;
+}
+.about .bg_links {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: absolute;
+}
+.about .logo {
+  width: 40px;
+  height: 40px;
+  z-index: 9;
+  background-image: url(https://rafaelavlucas.github.io/assets/codepen/logo_white.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 10px 7px;
+  opacity: 0.9;
+  transition: all 1s 0.2s ease;
+  bottom: 0;
+  right: 0;
+}
+.about .social {
+  opacity: 0;
+  right: 0;
+  bottom: 0;
+}
+.about .social .icon {
+  width: 100%;
+  height: 100%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  display: flex;
+  transition: all 0.2s ease, background-color 0.4s ease;
+  opacity: 0;
+  border-radius: 100%;
+}
+.about .social.portfolio {
+  transition: all 0.8s ease;
+}
+.about .social.portfolio .icon {
+  background-image: url(https://rafaelavlucas.github.io/assets/codepen/link.svg);
+}
+.about .social.dribbble {
+  transition: all 0.3s ease;
+}
+.about .social.dribbble .icon {
+  background-image: url(https://rafaelavlucas.github.io/assets/codepen/dribbble.svg);
+}
+.about .social.linkedin {
+  transition: all 0.8s ease;
+}
+.about .social.linkedin .icon {
+  background-image: url(https://rafaelavlucas.github.io/assets/codepen/linkedin.svg);
+}
+.about:hover {
+  width: 105px;
+  height: 105px;
+  transition: all 0.6s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .logo {
+  opacity: 1;
+  transition: all 0.6s ease;
+}
+.about:hover .social {
+  opacity: 1;
+}
+.about:hover .social .icon {
+  opacity: 0.9;
+}
+.about:hover .social:hover {
+  background-size: 28px;
+}
+.about:hover .social:hover .icon {
+  background-size: 65%;
+  opacity: 1;
+}
+.about:hover .social.portfolio {
+  right: 0;
+  bottom: calc(100% - 40px);
+  transition: all 0.3s 0s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .social.portfolio .icon:hover {
+  background-color: #698fb7;
+}
+.about:hover .social.dribbble {
+  bottom: 45%;
+  right: 45%;
+  transition: all 0.3s 0.15s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .social.dribbble .icon:hover {
+  background-color: #ea4c89;
+}
+.about:hover .social.linkedin {
+  bottom: 0;
+  right: calc(100% - 40px);
+  transition: all 0.3s 0.25s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .social.linkedin .icon:hover {
+  background-color: #0077b5;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #f2f2f2;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards .card {
+  height: 440px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  min-width: 260px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.4s ease;
+  margin: 0 10px;
+}
+.cards .card:before {
+  height: 190px;
+  width: calc(100% + 100px);
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  border-radius: 4px 4px 100% 100%;
+  transition: all 0.4s ease-out;
+  top: 0;
+}
+.cards .card .close {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  background-image: url("https://rafaelalvucas.github.io/assets/icons/misc/cross.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  padding: 5px;
+  transition: all 0.2s ease;
+}
+.cards .card .close:hover {
+  background-size: 100%;
+  opacity: 0.8;
+}
+.cards .card .arrow {
+  display: none;
+}
+.cards .card article {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.cards .card article h2 {
+  color: white;
+  margin: 0;
+  padding: 40px 20px 10px 20px;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+}
+.cards .card article .title {
+  color: white;
+  padding: 10px 20px;
+  letter-spacing: 0.8px;
+  transition: all 0.4s ease;
+}
+.cards .card article .desc {
+  padding: 10px 30px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+  color: #666;
+  height: 90px;
+  transition: all 0.4s ease-out;
+}
+.cards .card article .pic {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin: 20px 0;
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.3);
+  transition: all 0.6s ease;
+}
+.cards .card article .pic img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+.cards .card .actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  z-index: 1;
+}
+.cards .card .actions .btn {
+  border: 0;
+  background-color: transparent;
+  box-sizing: border-box;
+  width: calc(50% - 1px);
+  height: 36px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 10px;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+  color: #4481eb;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-family: "Barlow", sans-serif;
+  letter-spacing: 0.5px;
+  background: rgba(68, 129, 235, 0.08);
+}
+.cards .card .actions .btn span {
+  z-index: 1;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+.cards .card .actions .btn .icon {
+  width: 10px;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+}
+.cards .card .actions .btn:before {
+  content: "";
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  background: #4481eb;
+  transition: all 0.4s ease;
+  bottom: 0;
+  opacity: 0.2;
+}
+.cards .card .actions .btn:focus {
+  outline: 0;
+}
+.cards .card .actions .btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.cards .card .actions .btn:hover span {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.cards .card .actions .btn:hover .icon {
+  width: 22px;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+.cards .card .actions .btn:hover:nth-child(3) .icon {
+  width: 18px;
+}
+.cards .card .actions .btn:hover:before {
+  height: 100%;
+}
+.cards .card .actions .btn.clicked span {
+  display: none;
+}
+.cards .card .actions .btn.clicked .icon {
+  width: 22px;
+  opacity: 1;
+  animation: icon 0.5s ease forwards;
+}
+@keyframes icon {
+  0% {
+    width: 22px;
+  }
+  50% {
+    width: 40px;
+  }
+  100% {
+    width: 22px;
+  }
+}
+.cards .card .actions .btn.clicked:before {
+  opacity: 0.3;
+  height: 100%;
+}
+.cards .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.3);
+}
+.cards .card:hover:before {
+  height: 100%;
+  border-radius: 4px;
+}
+.cards .card:hover .desc {
+  color: white;
+}
+.cards .card:hover .pic {
+  box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, 0.3);
+}
+.cards .card:hover .pic img {
+  filter: grayscale(0%);
+}
+.cards .card.closed {
+  min-width: 120px;
+  max-width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s ease;
+  cursor: pointer;
+}
+.cards .card.closed .title,
+.cards .card.closed .desc,
+.cards .card.closed .actions,
+.cards .card.closed .close {
+  display: none;
+}
+.cards .card.closed h2 {
+  padding: 0;
+  height: 100%;
+  transform: rotate(-90deg);
+  width: 440px;
+  z-index: 2;
+  transition: all 0.6s ease;
+}
+.cards .card.closed .pic {
+  border-radius: 100%;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: -20px;
+  margin: 0;
+  box-shadow: 0;
+  transition: all 0.6s ease;
+}
+.cards .card.closed .pic img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  transform: translateY(20px);
+}
+.cards .card.closed .pic:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+  transition: all 0.4s ease;
+  transform: translateY(20px);
+}
+.cards .card.closed:before {
+  height: 100%;
+  border-radius: 4px;
+}
+.cards .card.closed .arrow {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  bottom: 15px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://rafaelavlucas.github.io/assets/icons/misc/expand.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.2s ease;
+}
+.cards .card.closed:hover .arrow {
+  background-size: 100%;
+  opacity: 0.6;
+}/*# sourceMappingURL=global.css.map */
